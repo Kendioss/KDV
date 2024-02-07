@@ -14,21 +14,21 @@ public class calculator {
         System.out.print("Seciminiz :");
         select = input.nextInt();
 
-        if (select == 1) {
-            System.out.println("Toplam :" + (n1 + n2));
-        } else if (select == 2) {
-            System.out.println("Cikarma :" + (n1 - n2));
-        } else if (select == 3) {
-            System.out.println("Carpma :" + (n1 * n2));
-        } else if (select == 4) {
-            if (n2 !=0) {
-                System.out.println("Bolme:" + (n1 / n2));
-            }else{
-                System.out.println("Bir sayi 0`a bolunemez.");
-            }
-            }else{
-            System.out.println("Yanlis bir secim yaptiniz.");
-
+        switch (select) {
+            case 1:
+                System.out.println("Toplama islemi sonucunuz :" + (n1 + n2));
+                break;
+            case 2:
+                System.out.println("Cikarma islemi sonucunuz :" + (n1 - n2));
+                break;
+            case 3 :
+                System.out.println("Carpma islemi sonucunuz :" + (n1 * n2));
+                break;
+            case 4 :
+                System.out.println("Bolme islemi sonucunuz :" + (n1 / n2));
+                break;
+            default:
+                System.out.println("Hata ! Lutfen 1-4 arasinda bir secim yapiniz.");
 
         }
     }
