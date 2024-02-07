@@ -7,7 +7,7 @@ public class Tempature {
         System.out.print("Lutfen hava sicakligini giriniz :");
         heat = input.nextInt();
         if (heat<5){
-            System.out.println("Kayak yap");
+            System.out.println("Kayak yap.");
         }else if (heat<=25){
             if(heat<=15){
                 System.out.println("Sinemaya git");
